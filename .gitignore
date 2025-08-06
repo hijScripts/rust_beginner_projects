@@ -2,9 +2,5 @@
 hello_cargo/target
 guessing_game/target
 
-# Cargo Locks
-guessing_game/Cargo.lock
-hello_cargo/Cargo.lock
-
 # Rustc Projects
 hello_world/main
