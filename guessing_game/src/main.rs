@@ -5,11 +5,12 @@ fn main() {
 
     println!("Please input your guess.");
 
-    let mut guess = String::new();
+    let mut guess = String::new(); // vars are immutable by default, 'mut' allows us to mutate them.
 
     io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read line");
+        .read_line(&mut guess) // gets user input and binds to 'guess' var. The '&' indicates the argument is a reference, 
+                               // which is also immutable by default. 
+        .expect("Failed to read line"); // Result returns either 'Err' or 'Ok', this line crashes program if 'Err' is received.
 
     println!("You guessed: {guess}");
 }
