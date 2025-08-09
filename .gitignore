@@ -3,6 +3,7 @@ hello_cargo/target
 guessing_game/target
 data_types/target
 variables/target
+functions/target
 
 # Rustc Projects
 hello_world/main
