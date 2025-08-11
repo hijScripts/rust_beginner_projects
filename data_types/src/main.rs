@@ -71,11 +71,11 @@ f64 considered as fast as f32 nowadays with more precision.
 // }
 
 /* Char Type */
-fn main() {
-    let c = 'z';
-    let z: char = 'ℤ'; // with explicit type annotation
-    let heart_eyed_cat = '😻';
-}
+// fn main() {
+//     let c = 'z';
+//     let z: char = 'ℤ'; // with explicit type annotation
+//     let heart_eyed_cat = '😻';
+// }
 
 /* Compound Types 
 Tuples
@@ -83,51 +83,51 @@ Array
 */
 
 /* Tuples */
-fn main() {
-    let tup: (i32, f64, u8) = (500, 6.4, 1);
-}
+// fn main() {
+//     let tup: (i32, f64, u8) = (500, 6.4, 1);
+// }
 
 // Getting individual value out of a tuple with a pattern
-fn main() {
-    let tup = (500, 6.4, 1);
+// fn main() {
+//     let tup = (500, 6.4, 1);
 
-    let (x, y, z) = tup;
+//     let (x, y, z) = tup;
 
-    println!("The value of y is: {y}");
-}
+//     println!("The value of y is: {y}");
+// }
 
 // Getting individual value out of a tuple with indexing
-fn main() {
-    let x: (i32, f64, u8) = (500, 6.4, 1);
+// fn main() {
+//     let x: (i32, f64, u8) = (500, 6.4, 1);
 
-    let five_hundred = x.0;
+//     let five_hundred = x.0;
 
-    let six_point_four = x.1;
+//     let six_point_four = x.1;
 
-    let one = x.2;
-}
+//     let one = x.2;
+// }
 
 /* Arrays */
-fn main() {
-    let a = [1, 2, 3, 4, 5];
+// fn main() {
+//     let a = [1, 2, 3, 4, 5];
 
-    let months = ["January", "February", "March", "April", "May", "June", "July",
-              "August", "September", "October", "November", "December"];
+//     let months = ["January", "February", "March", "April", "May", "June", "July",
+//               "August", "September", "October", "November", "December"];
 
-    // [data type, num of elements]
-    let a: [i32; 5] = [1, 2, 3, 4, 5];
+//     // [data type, num of elements]
+//     let a: [i32; 5] = [1, 2, 3, 4, 5];
 
-    // defines an array with 5 elements of value 3
-    let a = [3; 5];
-}
+//     // defines an array with 5 elements of value 3
+//     let a = [3; 5];
+// }
 
 // accessing an array with indexing
-fn main() {
-    let a = [1, 2, 3, 4, 5];
+// fn main() {
+//     let a = [1, 2, 3, 4, 5];
 
-    let first = a[0];
-    let second = a[1];
-}
+//     let first = a[0];
+//     let second = a[1];
+// }
 
 // compiles but will result in a run-time error if out of bounds.
 use std::io;

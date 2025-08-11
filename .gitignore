@@ -4,6 +4,7 @@ guessing_game/target
 data_types/target
 variables/target
 functions/target
+control_flow/target
 
 # Rustc Projects
 hello_world/main

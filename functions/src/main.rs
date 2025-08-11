@@ -6,9 +6,9 @@
 
 // parameters speical vars the are apart of functions signature. 
 // Interchangable with arguments that are concrete values
-fn another_function(x: i32, unit_label: char) {
-    println!("Another function. {x}, {unit_label}");
-}
+// fn another_function(x: i32, unit_label: char) {
+//     println!("Another function. {x}, {unit_label}");
+// }
 
 // Statements are instructions that perform some action and do not return a value.
 // Expressions evaluate to a resultant value.
