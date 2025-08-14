@@ -5,6 +5,8 @@ data_types/target
 variables/target
 functions/target
 control_flow/target
+fahrenheit_to_celsius/target
+fibonacci/target
 
 # Rustc Projects
 hello_world/main
