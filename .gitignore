@@ -7,6 +7,7 @@ functions/target
 control_flow/target
 fahrenheit_to_celsius/target
 fibonacci/target
+ownership/target
 
 # Rustc Projects
 hello_world/main
