@@ -46,6 +46,8 @@ fn main() {
 }
 
 // rewriting first function to use slices
+//fn first_word(s: &str) -> &str { better way to write it as it allows for operations on
+// any string slice, not just String
 fn first_word(s: &String) -> &str {
     let bytes = s.as_bytes();
 
@@ -56,4 +58,15 @@ fn first_word(s: &String) -> &str {
     }
 
     &s[..]
+}
+
+// now shows error
+fn main() {
+    let mut s = String::from("hello world");
+
+    let word = first_word(&s);
+
+    s.clear(); // error!
+
+    println!("the first word is: {word}");
 }
