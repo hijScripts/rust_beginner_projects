@@ -12,4 +12,13 @@ fn main() {
         email: String::from("someone@example.com"),
         sign_in_count: 1,
     };
+
+    let mut user2 = User {
+        active: true,
+        username: String::from("someusername123"),
+        email: String::from("someone@example.com"),
+        sign_in_count: 1,
+    };
+
+    user2.email = String::from("anotheremail@example.com");
 }
