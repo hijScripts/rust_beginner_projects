@@ -81,3 +81,9 @@ fn main() {
 
     let Point(x, y, z) = origin // returns x, y, and z
 }
+
+struct AlwaysEqual;
+
+fn main() {
+    let subject = AlwaysEqual;
+}
