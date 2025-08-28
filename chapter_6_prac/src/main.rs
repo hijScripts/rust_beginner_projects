@@ -1,13 +1,13 @@
 use std::io;
 
 fn main() {
-    let mut input: String = String::new(); // vars are immutable by default, 'mut' allows us to mutate them.
+    let mut input: String = String::new(); 
 
     io::stdin()
         .read_line(&mut input)      
         .expect("Failed to read line"); 
 
-    let mut input: &str = input.trim();
+    let input: &str = input.trim();
 
     let value: u32 = match input {
         "a" => 1,
