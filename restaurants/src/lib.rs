@@ -58,7 +58,13 @@ mod back_of_house {
     }
 }
 
+// pub fn eat_at_restaurant() {
+//     let order1 = back_of_house::Appetizer::Soup;
+//     let order2 = back_of_house::Appetizer::Salad;
+// }
+
+use crate::front_of_house::hosting;
+
 pub fn eat_at_restaurant() {
-    let order1 = back_of_house::Appetizer::Soup;
-    let order2 = back_of_house::Appetizer::Salad;
+    hosting::add_to_waitlist();
 }
