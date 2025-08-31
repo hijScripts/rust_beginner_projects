@@ -63,8 +63,32 @@ mod back_of_house {
 //     let order2 = back_of_house::Appetizer::Salad;
 // }
 
+// idiomatic use path for bringing functions into scope
 use crate::front_of_house::hosting;
 
 pub fn eat_at_restaurant() {
     hosting::add_to_waitlist();
 }
+
+// idiotmatic use path for structs, enums, and other items
+use std::collections::HashMap;
+
+fn main() {
+    let mut map = HashMap::new();
+    map.insert(1, 2);
+}
+
+// using 'as' to create an alias
+use std::fmt::Result;
+use std::io::Result as IoResult;
+
+fn function1() -> Result {
+    // --snip--
+}
+
+fn function2() -> IoResult<()> {
+    // --snip--
+}
+
+// glob operator to bring all public items into scope
+use std::collections::*;
